@@ -1,9 +1,15 @@
+import React, { useContext } from "react";
+import NavBar from "./NavBar";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Link } from "react-router-dom";
+import CartContext from "../ContextApi/CartContext";
 const Header = () => {
  
+  const { productList } = useContext(CartContext);
+
   return (
     <>
       <div className="header-container">
@@ -66,8 +72,20 @@ const Header = () => {
             <span>Returns</span>
             <p className="bold">& Orders</p>
           </div>
+          <Link to={"/CartPage"}>
+          <div className="menu-items flexBox">
+            <div className="bold">
+              <AddShoppingCartIcon />
+              <span>{productList.length}</span>
+            </div>
+            <div>
+              <p>Cart</p>
+            </div>
+          </div>
+          </Link>
         </div>
       </div>
+      <NavBar />
     </>
   );
 };

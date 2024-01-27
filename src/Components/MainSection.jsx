@@ -1,4 +1,6 @@
-import {ProductCard} from "./ProductCard";
+import {ProductCard, ProductCard2} from "./ProductCard";
+import { AmazonPay, Upcominglaunches, StylesForMen } from './Details/OfferDetail'
+import ProductSlider from "./ProductSlider";
 import PrimeSlider from "./PrimeSlider";
 
 const MainSection = () => {
@@ -12,11 +14,13 @@ const MainSection = () => {
           img="../image/ProductImage/b1.jpg"
           offer="Shop Now"
         />
+        <ProductCard2 Detail={Upcominglaunches}  title="Latest and upcoming launches" />
         <ProductCard
           title="Amazon pay Book Travel Tickets"
           img="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg"
           offer="Shop Now"
         />
+        <ProductCard2 Detail={AmazonPay}  title="Amazon pay Book Travel Tickets" />
         </div>
         <div className="product-gallery">
         <ProductCard
@@ -24,13 +28,16 @@ const MainSection = () => {
           img="../image/ProductImage/b2.jpg"
           offer="Shop Now"
         />
+        <ProductCard2 Detail={StylesForMen}  title="Up to 60% off | Styles for men" />
         <ProductCard
           title="Amazon pay Book Travel Tickets"
           img="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_1._SY304_CB614835787_.jpg"
           offer="Shop Now"
         />
+        <ProductCard2 Detail={AmazonPay}  title="Amazon pay Book Travel Tickets" />
         </div>
 
+        <ProductSlider />
       </div>
     </>
   );

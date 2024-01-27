@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import "./ProductPaga.css";
+import "./ProductPage.css";
 import StarIcon from '@mui/icons-material/Star';
 import { ProductDetail, WatchDetail, LaptopDetail, headphonesDetail } from "../Details/ProductDetail";
 import { shippingDetail, ColorDetail } from '../Details/ProductPageDetail'
 import { Link, useParams } from "react-router-dom";
-import CartContext from "../ContextApi/CartContext";
+import CartContext from "../../ContextApi/CartContext";
 
 
 const ProductPaga = () => {

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { GettoKnowUs, ConnectwithUs, MakeMoneywithUs, LetUsHelpYou } from "./FooterDetail";
+import { GettoKnowUs, ConnectwithUs, MakeMoneywithUs, LetUsHelpYou } from "./Details/FooterDetail";
 import { Link } from "react-router-dom";
 import LanguageIcon from '@mui/icons-material/Language';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
